@@ -27,5 +27,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 /gostdlibsol/
-
+/section05/dbc/data
+/section05/proverbs.*
 # End of https://www.gitignore.io/api/macos
