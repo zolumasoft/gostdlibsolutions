@@ -28,6 +28,7 @@ var ui uint64 = 1844679551615
 
 func main() {
 	outputToStdOut()
+	outputToWriter()
 	// n, err := outputToWriter()
 	// if err != nil {
 	// 	fmt.Printf("Error occurred: %s\n", err)
@@ -37,7 +38,7 @@ func main() {
 }
 
 func outputToWriter() (string, error) {
-	file, err := ioutil.TempFile("", "example")
+	file, err := ioutil.TempFile(".", "example")
 	if err != nil {
 		return "", err
 	}
